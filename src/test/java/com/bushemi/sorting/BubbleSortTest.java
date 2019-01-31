@@ -15,8 +15,11 @@ public class BubbleSortTest {
     @Test
     public void sort() {
         SorterService sorter = new BubbleSort();
+        List<Integer> numbers = DataProvider.getArrayListOfIntegers();
+        System.out.println("numbers = " + numbers);
         List<Integer> sortedList =
-                sorter.sort(com.bushemi.sorting.DataProvider.getArrayListOfIntegers());
+                sorter.sort(numbers);
+        System.out.println("sortedList = " + sortedList);
         for (int i = 0; i < sortedList.size() - 1; i++) {
             int x = sortedList.get(i);
             int y = sortedList.get(i + 1);
