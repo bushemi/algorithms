@@ -1,9 +1,9 @@
-package com.bushemi.sorting;
+package com.bushemi.sorting.dataProvider;
 
 import java.util.Arrays;
 import java.util.List;
 
-final class DataProvider {
+public final class DataProvider {
     private DataProvider() {
     }
 

@@ -8,6 +8,8 @@ import org.junit.runners.JUnit4;
 
 import java.util.List;
 
+import static com.bushemi.sorting.dataProvider.DataProvider.getArrayListOfIntegers;
+
 @RunWith(JUnit4.class)
 public class BubbleSortTest {
 
@@ -15,7 +17,7 @@ public class BubbleSortTest {
     @Test
     public void sort() {
         SorterService sorter = new BubbleSort();
-        List<Integer> numbers = DataProvider.getArrayListOfIntegers();
+        List<Integer> numbers = getArrayListOfIntegers();
         System.out.println("numbers = " + numbers);
         List<Integer> sortedList =
                 sorter.sort(numbers);
