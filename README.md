@@ -12,4 +12,4 @@ InsertionSortTest  35 - 50k nanoseconds<br/>
 JavasSortTest - 35 - 45k nanoseconds<br/>
 
 
-<div style="background-color: aqua;color: gold;"> JavasSort for now is fastest.</div>
+ JavasSort for now is fastest.
