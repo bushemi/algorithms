@@ -13,6 +13,7 @@ import static com.bushemi.sorting.dataProvider.DataProvider.getArrayListOfIntege
 public class InsertionSortTest {
     @Test
     public void sort() {
+        long nanoTime = System.nanoTime();
         SorterService sorter = new InsertionSort();
         List<Integer> numbers = getArrayListOfIntegers();
         System.out.println("numbers = " + numbers);
@@ -24,6 +25,7 @@ public class InsertionSortTest {
             int y = sortedList.get(i + 1);
             Assert.assertTrue("list is not sorted", x < y);
         }
+        System.out.println("newNanoTime = " + (System.nanoTime() - nanoTime));
     }
 
 
