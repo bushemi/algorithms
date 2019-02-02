@@ -16,6 +16,7 @@ public class BubbleSortTest {
 
     @Test
     public void sort() {
+        long nanoTime = System.nanoTime();
         SorterService sorter = new BubbleSort();
         List<Integer> numbers = getArrayListOfIntegers();
         System.out.println("numbers = " + numbers);
@@ -27,6 +28,7 @@ public class BubbleSortTest {
             int y = sortedList.get(i + 1);
             Assert.assertTrue("list is not sorted", x < y);
         }
+        System.out.println("newNanoTime = " + (System.nanoTime() - nanoTime));
     }
 
 
